@@ -1,15 +1,8 @@
-This code groups the data based on identifier where data is merged on an excel file
-Like this:
-Identifier | User
-123         | abc
-            | def
-            | ghi
-            | jkl
+This code will turn raw device data from Tableau to Mission Control device blocking format
 
-456         | mno
-            | pqr
-            | stu
-
-
-Make sure to unmerge the identifier first from excel and then run the code
-this code copies value from the proceeding cell to the blank rows below (after unmerging) 
+Step 1. Download the all devices and user sheet from tableau and add in repo
+Step 2. Update the Accounts_to_Block.csv file with accounts which devices you want to block
+Step 3. Umerge.py 
+Step 4. merge_device.py
+Step 5. melt.py
+Step 6. Use the exported file to block devices on MC (100 at a time)
